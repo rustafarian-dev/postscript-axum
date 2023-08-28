@@ -1,0 +1,12 @@
+[package]
+name = "postscript-axum"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+axum = { version = "0.6.20", features = ["headers"] }
+chrono = "0.4.26"
+serde = { version = "1.0.188", features = ["derive"] }
+tokio = { version = "1.32.0", features = ["process", "io-util", "rt-multi-thread", "macros", "full"] }
